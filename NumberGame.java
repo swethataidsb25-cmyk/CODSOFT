@@ -15,7 +15,7 @@ public class NumberGame {
             int maxAttempts = 7;
             boolean hasGuessedCorrectly = false;
 
-            System.out.println("\n🎯 Welcome to the Number Guessing Game!");
+            System.out.println("\n Welcome to the Number Guessing Game!");
             System.out.println("Guess a number between 1 and 100");
             System.out.println("You have " + maxAttempts + " attempts.\n");
 
@@ -25,26 +25,26 @@ public class NumberGame {
                 attempts++;
 
                 if (userGuess == numberToGuess) {
-                    System.out.println("✅ Correct! You guessed it in " + attempts + " attempts.");
+                    System.out.println(" Correct! You guessed it in " + attempts + " attempts.");
                     hasGuessedCorrectly = true;
                     break;
                 } else if (userGuess < numberToGuess) {
-                    System.out.println("📉 Too low!");
+                    System.out.println(" Too low!");
                 } else {
-                    System.out.println("📈 Too high!");
+                    System.out.println(" Too high!");
                 }
 
                 System.out.println("Attempts left: " + (maxAttempts - attempts));
             }
 
             if (!hasGuessedCorrectly) {
-                System.out.println("❌ You've used all attempts!");
+                System.out.println("You've used all attempts!");
                 System.out.println("The correct number was: " + numberToGuess);
             }
 
             // Score (based on attempts)
             int score = hasGuessedCorrectly ? (maxAttempts - attempts + 1) * 10 : 0;
-            System.out.println("🏆 Your score: " + score);
+            System.out.println("Your score: " + score);
 
             // Play again option
             System.out.print("\nDo you want to play again? (yes/no): ");
@@ -52,7 +52,7 @@ public class NumberGame {
 
             if (!response.equalsIgnoreCase("yes")) {
                 playAgain = false;
-                System.out.println("👋 Thanks for playing!");
+                System.out.println(" Thanks for playing!");
             }
         }
 

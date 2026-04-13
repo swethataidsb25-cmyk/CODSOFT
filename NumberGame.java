@@ -10,7 +10,7 @@ public class NumberGame {
         boolean playAgain = true;
 
         while (playAgain) {
-            int numberToGuess = random.nextInt(100) + 1; // 1 to 100
+            int numberToGuess = random.nextInt(100) + 1; 
             int attempts = 0;
             int maxAttempts = 7;
             boolean hasGuessedCorrectly = false;
